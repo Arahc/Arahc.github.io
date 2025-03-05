@@ -30,7 +30,7 @@
     
     <title>
         
-            初级算法与数据结构入门指北 | Arahc&#39;s Home
+            初级算法与数据结构入门导论 | Arahc&#39;s Home
         
     </title>
 
@@ -520,7 +520,7 @@ mjx-container[display="true"] + br {
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">初级算法与数据结构入门指北</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">初级算法与数据结构入门导论</h1>
 			</div>
 			
 		</div>
@@ -548,8 +548,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-12-20 11:55:58</span>
-            <span class="mobile">2024-12-20 11:55:58</span>
+            <span class="desktop">2025-03-05 15:24:57</span>
+            <span class="mobile">2025-03-05 15:24:57</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -576,12 +576,12 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>10.9k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>12.3k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>43 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>47 分钟</span>
         </span>
     
     
@@ -1007,6 +1007,46 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <p>在下面的程序中，我们先计算数列的最大数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span>，然后根据 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span> 计算每个数的位数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span></span></span></span>，然后就可以从最低位到最高位依次桶排序了. 程序中 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 代表的是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">a_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 的第 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 位的数（通过简单推一下可以得到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo fence="true">⌊</mo><mfrac><msub><mi>a</mi><mi>j</mi></msub><mrow><mn>1</mn><msup><mn>0</mn><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mfrac><mo fence="true">⌋</mo></mrow><mtext> </mtext><mo lspace="0.22em" rspace="0.22em"><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow></mo><mtext> </mtext><mn>10</mn></mrow><annotation encoding="application/x-tex">x=\left\lfloor\frac{a_j}{10^{i-1}}\right\rfloor\bmod 10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.20001em;vertical-align:-0.35001em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">⌊</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.808712em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7570857142857143em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.50732em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">⌋</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mbin"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext> </mtext><mo lspace="0.22em" rspace="0.22em"><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow></mo><mtext> </mtext></mrow><annotation encoding="application/x-tex">\bmod</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span></span></span> 表示取模运算，即取余数）。</p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://pic.imgdb.cn/item/6764e95cd0e0a243d4e6cba8.png" alt="code1-2-6-1"></p>
 <p>时间复杂度是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(nd)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mclose">)</span></span></span></span> 的，也就是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mi>n</mi><msub><mo><mi>log</mi><mo>⁡</mo></mo><mn>10</mn></msub><mi>M</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(n\log_{10} M)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.20696799999999996em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mclose">)</span></span></span></span>.</p>
+<h2 id="数据结构指北">数据结构指北</h2>
+<h3 id="数据结构？">数据结构？</h3>
+<p>数据结构是一种抽象的概念，我们可以举个例子来解释：假设你家里没有水，但是某处的河水可以饮用，那么你每天都需要跑到河边上喝水，这太麻烦了。于是你发明了一个输水系统，把河水打通到你家的水缸里，然后挂一个水龙头。此时你家的水缸就支持两种操作：从水井获得水、给你提供水，而且不需要麻烦你每天去河边上，这就方便了。</p>
+<p>当然，一些数据结构不一定具有严格意义上“优化”的功能，只是简单的支持一些操作，例如：你发明的不是那么高级的输水系统，而是一个水桶，支持往里面灌水和把水倒出来，这样你每天还是得跑到河边去喝水，但是由于水桶的存在，你不再需要自己趴下来喝水，而是可以打水喝。这提供了一定程度的便利，但是不能从根本上优化问题复杂度（在这里我们认为是不能解决你每天都要跑到河边的问题）。</p>
+<p>我们讨论一个数据结构，就是讨论这个东西的内在逻辑（水桶是怎么打水的？）和支持的操作（水桶能用来干啥？为啥只能用来打水，不能用来打岩浆？）。实际上，由于数据结构放大了光听不写会带来的弊端（只知道原理和写出来还差的很远很远，特别是后面的高级数据结构），所以数据结构的实现（怎么做一个水桶？）也是关注对象，但是本文并不会介绍数据结构的具体实现，因为它们都能用 C++ 内置容器实现。</p>
+<h3 id="线性数据结构">线性数据结构</h3>
+<p>在这里我们讨论栈、队列这些数据结构。</p>
+<h4 id="栈">栈</h4>
+<p>现在想象子弹装进弹匣的过程，如果你非常不幸地没有在读这段话的时候随身带枪的话，可以考虑现在网购一把。</p>
+<p>开玩笑的，那就考虑把书从下到上叠成一摞的过程。假设你的力气小到无法把一本书从书堆里塞进去或抽出来，那么你能做的仅仅是把书放到书堆的最顶上，或者把最顶上的那本书拿出来。</p>
+<p>我们进一步考虑这样的操作有什么性质，你会发现，假设接连放入了很多书的话，最早放入的书会被埋在最底下，最晚放入的书反而在最上面。因此，当我重新把这些书拿出来的时候，最顶上的书（也就是最晚放入的书）会最先被拿出来。简言之，最早放入的书最晚被拿出来，最晚放入的书反而最早被拿出来，这是一个<strong>先进后出</strong>的容器。我们称之为栈。</p>
+<p>被压在最底下的书的位置，也就是栈的最底部，叫栈底；类似的，最顶上的书的位置，也就是栈的最顶上，叫栈顶。那么一个栈应当支持如下操作：</p>
+<ol>
+<li>将一个元素加入栈中（即入栈）。显然，加入后，这个元素应当在栈顶位置。你不能把一个元素随意地加入到栈地某个位置，对应前面例子的你的力气很小无法把书插到书堆里。</li>
+<li>将栈顶的元素拿出来（即出栈）。你不能拿出栈中任意某个元素，只能拿栈顶的元素，对应前面例子的你的力气很小无法把书从书堆里抽出来。</li>
+<li>查询栈顶的元素是什么。</li>
+</ol>
+<p>栈还有如下衍生的可支持操作：</p>
+<ol>
+<li>查询栈内元素个数（即栈的大小）。</li>
+<li>查询栈底的元素（注意，无法从栈底把元素移除）。</li>
+</ol>
+<p>以上所有的操作，都应当在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 的时间复杂度内实现。</p>
+<p>C++ 中的 <code>stack</code> 可以实现上述除查询栈底之外的操作。</p>
+<h3 id="队列">队列</h3>
+<p>字面意思，想象以下你去食堂排队。如果食堂的机制和栈一样先进后出，也就是最先到的最后得到饭，后到的先拿到饭，那很逆天了。</p>
+<p>所以我们需要一个和排队一样<strong>先进先出</strong>的机制。最先到的人最先拿到饭，最后到的最后拿到饭，这才很合理嘛。</p>
+<p>我们把排在最前面，也就是最先的那个位置叫做队头，排在最后面的叫做队尾。那么一个队列应当支持如下操作：</p>
+<ol>
+<li>将一个元素加入队尾（即入队）。</li>
+<li>将队头的元素拿出来（即出队）。</li>
+<li>查询队头的元素是什么。</li>
+</ol>
+<p>当然还有衍生操作：</p>
+<ol>
+<li>查询队列内元素个数（即队列的大小）。</li>
+<li>查询队尾元素（注意，无法从队尾把元素移除）。</li>
+</ol>
+<p>以上所有的操作，都应当在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 的时间复杂度内实现。</p>
+<p>C++ 中的 <code>queue</code> 可以实现上述除查询队尾之外的操作。</p>
 
 		</div>
 
@@ -1014,14 +1054,14 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 初级算法与数据结构入门指北</li>
+        <li><strong>标题:</strong> 初级算法与数据结构入门导论</li>
         <li><strong>作者:</strong> Arahc</li>
         <li><strong>创建于
                 :</strong> 2024-10-31 08:00:00</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-12-20 11:55:58
+                    :</strong> 2025-03-05 15:24:57
             </li>
         
         <li>
@@ -1118,8 +1158,8 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">初级算法与数据结构入门指北</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%8C%87%E5%8C%97"><span class="nav-text">算法指北</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E5%86%85%E5%AE%B9"><span class="nav-text">前置内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-text">排序</span></a></li></ol></li></ol>
+		<div class="page-title">初级算法与数据结构入门导论</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%8C%87%E5%8C%97"><span class="nav-text">算法指北</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E5%86%85%E5%AE%B9"><span class="nav-text">前置内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-text">排序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%8C%87%E5%8C%97"><span class="nav-text">数据结构指北</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%9F"><span class="nav-text">数据结构？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">线性数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%98%9F%E5%88%97"><span class="nav-text">队列</span></a></li></ol></li></ol>
 
 	</div>
 </div>
@@ -1141,7 +1181,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
               <span>2022</span>
               -
             
-            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Arahc</a>
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Arahc</a>
             
                 
                 <p class="post-count space-x-0.5">
@@ -1150,7 +1190,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
                     </span>
                     
                         <span>
-                            共 184.6k 字
+                            共 185.9k 字
                         </span>
                     
                 </p>
